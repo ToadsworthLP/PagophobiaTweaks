@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.toastworth.pagophobiatweaks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "pagophobiatweaks.refmap.json",
+  "mixins": [
+    "PrimalWinterEventHandlerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
