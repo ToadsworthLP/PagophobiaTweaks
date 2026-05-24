@@ -8,6 +8,8 @@
     "PrimalWinterEventHandlerMixin"
   ],
   "client": [
+    "PrimalWinterClientEventHandlerMixin",
+    "VanillaLevelRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

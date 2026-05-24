@@ -2,6 +2,7 @@ package com.toastworth.pagophobiatweaks.mixin;
 
 import com.alcatrazescapee.primalwinter.blocks.PrimalWinterBlocks;
 import com.alcatrazescapee.primalwinter.util.Config;
+import com.toastworth.pagophobiatweaks.config.CommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.LightLayer;
@@ -37,7 +38,7 @@ public class PrimalWinterEventHandlerMixin {
                 {
                     // Stack snow layers
                     final int layers = state.getValue(BlockStateProperties.LAYERS);
-                    if (layers < com.toastworth.pagophobiatweaks.Config.primalWinterMaxSnowAccumulationLayers)
+                    if (layers < CommonConfig.primalWinterMaxSnowAccumulationLayers)
                     {
                         level.setBlockAndUpdate(pos, state.setValue(BlockStateProperties.LAYERS, 1 + layers));
                     }
